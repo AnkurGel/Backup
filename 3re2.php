@@ -27,7 +27,7 @@ if($_FILES)
 	$name=$_FILES['filename']['name'];
 	move_uploaded_file($_FILES['filename']['tmp_name'], "dir/$name");
 	echo "UPLOADED!";
-	$address="http://techgoblet.com/wp-content/new/dir/"$name;
+	$address="http://techgoblet.com/wp-content/new/dir/".$name;
 	$add_len=strlen($address);
 
 echo<<<_SHOW
