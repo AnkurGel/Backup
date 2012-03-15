@@ -33,4 +33,5 @@ puts current.join
 	puts " ^ NOPE"
 	puts "#{8-x} guess remaining.."
 end
+puts "Movie: #{movie}"
 	
