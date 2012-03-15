@@ -5,7 +5,7 @@ end
 
 movie = arr.sample.chomp!# movie.each_char{|x| y=(((x=~/[aeiou ]/)!=nil)?x:'*'); print y; current<<y }
 current=movie.gsub(/[^aeiou ]/,'*').chars.map{|x| x}
-p current.join
+puts current.join
 trials_arr=[]
 9.times do |x| 
 match_found_ctr=0
@@ -29,6 +29,7 @@ puts current.join
 		break
 	end
 	redo if match_found_ctr==1
+	puts " ^ NOPE"
 	puts "#{8-x} guess remaining.."
 end
 	
