@@ -4,6 +4,7 @@ arr=f.each.map{|x| x.downcase}
 end
 
 movie = arr.sample.chomp!# movie.each_char{|x| y=(((x=~/[aeiou ]/)!=nil)?x:'*'); print y; current<<y }
+movie.gsub!(/[^a-z ]/,'')
 current=movie.gsub(/[^aeiou ]/,'*').chars.map{|x| x}
 puts current.join
 trials_arr=[]
