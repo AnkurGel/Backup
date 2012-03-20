@@ -9,7 +9,7 @@ len_ctr=0
 		if pat[i]!=str[s+i] then break
 		else len_ctr+=1 
 		end
-		puts pat+" in source at index: #{s}" if len_ctr==m
+		puts "Pattern occurs with shift: #{s}" if len_ctr==m
 		end
 	end
 end

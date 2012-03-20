@@ -19,9 +19,8 @@ def compute_prefix_on(pat)
 			k=pie[k]
 		end
 		k+=1 if pat[k+1]==pat[q]
-		pie[k]=k
+		pie[q]=k
 		end
-		p pie
 		pie
 end 
 puts "Enter Text: "; str=gets.chomp!
