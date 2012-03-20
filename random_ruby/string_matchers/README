@@ -1,24 +1,31 @@
-Implemented Rabin Karp and Naive String Matching in ruby.
+Implemented KMP, Rabin Karp and Naive String Matching in ruby.
 PATTERN = aabcbd
-TEXT = random string generated in file named 'randomcharactersfile' from my code: random_string_gen_chars.rb. Text size is 4000000(4 million) letters. (It took 14.341 seconds to execute of this code and creation of this file)
+TEXT = random string generated in file named 'randomcharactersfile' from my code: random_string_gen_chars.rb. Text size is 8000000(8 million) letters. (It took 72.941 seconds to execute of this code and creation of this file)
 
 Result: 
+KMP statistics:
+9.857s seconds
+[Result stored in outputkmp]
 Rabin Karp statistics: 
-5.584 seconds
+13.301 seconds
 [Result stored in outputrabin]
 
 Naive String Matching statistics:
-6.788 seconds
+11.113 seconds
 [Result stored in outputnaive]
 
+All three output files are same => Result verified!
+
 Source Files: (Ruby)
+kmp.rb => KMP Matcher
 naive_matcher.rb => Naive String Matcher
 rabin_karp.rb => Rabin Karp Matcher (currently this is forked from user Myth17, I'll implement it myself shortly)
-random_string_gen_chars.rb => Generates 4 million random characters from 'a'..'e'. Didn't increase the range for intense searching.
+random_string_gen_chars.rb => Generates 8 million random characters from 'a'..'e'. Didn't increase the range for intense searching.
 random_string_gen.rb => Generating elements from an array at random and pushing it to the file 'randomstringtext'
 
 To Implement:
-KMP Algorithm, and will increase 4 million range to around 10 million.
+KMP Algorithm, and will increase 4 million range to around 10 million. 
+EDIT: KMP Done. Random characters changed to 8 million characters.
 
 Note:
 append 'pattern' in next line of generated file 'randomcharactersfile' (Here, 'aabcbd') for correct input order for program. 
