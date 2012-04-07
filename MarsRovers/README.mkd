@@ -1,5 +1,5 @@
 ## MARS ROVERS
-<img src="http://www.universetoday.com/wp-content/uploads/2011/09/apollo-17-lunar-rover-001.jpg" height="40%" width="20%" align="left">
+<img src="http://www.universetoday.com/wp-content/uploads/2011/09/apollo-17-lunar-rover-001.jpg" height="40%" width="20%" align="right">
 ###Input:
 - Enter top right corner of grid. Bottom left corner is assumed to be 0,0 as asked. For example, for input (3,4) grid of 4 rows(0..3) and 5 columns(0..4) will be created.
 - Enter number of Rovers landing/you-want-to-operate on Mars. (n)
@@ -21,7 +21,7 @@ DISPUTED SIGNAL! Bot is instructed to go at (4, 2) which lies out of grid.
 
 ###How To Run: 
 - To execute main program: `ruby -I . run.rb` while in parent directory. 
-* I have implemented two tests in my program : > MiniTest::Unit::TestCase and rspec
+* I have implemented two tests in my program : > __MiniTest__::Unit::TestCase and __RSpec__
 - To run Unit Tests: `ruby -I . test/test.rb` . It checks for all assertions and error generations successfully from all perspective. Total: 504 assertions
 - To run rspec tests : `rspec test/spectest.rb` . It correspondingly checks for all expectations and exceptions. FUN :)
 
@@ -31,7 +31,7 @@ DISPUTED SIGNAL! Bot is instructed to go at (4, 2) which lies out of grid.
 
 * Took care of all exceptions and raised them adequately.  :)
 * * * 
-- __Ankur Goel__
-<ankurgel@gmail.com>
+__Ankur Goel__
+<ankurgel@gmail.com>  
 
 I stripped all comments from my code as it might have looked messy etc. That version still resides in my system somewhere. 
