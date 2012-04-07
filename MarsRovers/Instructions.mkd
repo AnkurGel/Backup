@@ -1,0 +1,35 @@
+## Input:
+- Enter top right corner of grid. Bottom left corner is assumed to be 0,0 as asked. For example, for input (3,4) grid of 4 rows(0..3) and 5 columns(0..4) will be created.
+- Enter number of Rovers landing/you-want-to-operate on Mars. (n)
+- Enter first rover's coordinate and position. Sequence shall be as - x\_coord y\_coord posn | Example : 1 2 N
+- Enter sequence sent by scientists for operation of rover. 
+- Repeat for n bots.
+
+###Example: 
+3 4
+2
+1 2 N 
+RMLMMRM
+2 2 W 
+MMMRLM
+
+###Output: 
+3 4 W
+DISPUTED SIGNAL! Bot is instructed to go at (4, 2) which lies out of grid.
+
+###How To Run: 
+- To execute main program: `ruby -I . run.rb` while in parent directory. 
+* I have implemented two tests in my program : > MiniTest::Unit::TestCase and rspec
+- To run Unit Tests: `ruby -I . test/test.rb` . It checks for all assertions and error generations successfully from all perspective. Total: 504 assertions
+- To run rspec tests : `rspec test/spectest.rb` . It correspondingly checks for all expectations and exceptions. FUN :)
+
+###Details
+- Main working class for Rovers is available in _lib/code.rb_ 
+- _run.rb_ in parent directory is general simple code to create multiple instances and to pass adequate data to class Bot
+
+* Took care of all exceptions and raised them adequately.  :)
+* * * 
+- __Ankur Goel__
+<ankurgel@gmail.com>
+
+I stripped all comments from my code as it might have looked messy etc. That version still resides in my system somewhere. 
