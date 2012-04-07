@@ -1,5 +1,5 @@
 ## MARS ROVERS
-<img src="http://www.universetoday.com/wp-content/uploads/2011/09/apollo-17-lunar-rover-001.jpg" height="40%" width="20%" align="center">
+<img src="http://www.universetoday.com/wp-content/uploads/2011/09/apollo-17-lunar-rover-001.jpg" height="40%" width="20%" align="left">
 ###Input:
 - Enter top right corner of grid. Bottom left corner is assumed to be 0,0 as asked. For example, for input (3,4) grid of 4 rows(0..3) and 5 columns(0..4) will be created.
 - Enter number of Rovers landing/you-want-to-operate on Mars. (n)
@@ -8,16 +8,16 @@
 - Repeat for n bots.
 
 ###Example: 
-3 4
-2
-1 2 N 
-RMLMMRM
-2 2 W 
-MMMRLM
+3 4  
+2  
+1 2 N  
+RMLMMRM  
+2 2 W   
+MMMRLM  
 
 ###Output: 
-3 4 W
-DISPUTED SIGNAL! Bot is instructed to go at (4, 2) which lies out of grid.
+3 4 W  
+DISPUTED SIGNAL! Bot is instructed to go at (4, 2) which lies out of grid.  
 
 ###How To Run: 
 - To execute main program: `ruby -I . run.rb` while in parent directory. 
