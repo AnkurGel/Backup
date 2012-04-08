@@ -12,10 +12,7 @@ class Bot
     end
 
     def rotate(current_pos, dir)
-        if dir.eql?(?L); return @@acw[current_pos.intern]
-        else
-            @@cw[current_pos.intern]
-        end
+        dir.eql?(?L)? @@acw[current_pos.intern]:@@cw[current_pos.intern]
     end
 
     def move(pos, xdir, ydir, xm, ym)
