@@ -1,14 +1,14 @@
 class Bot
 	attr_accessor :x, :y, :p
-	       @@acw ={N: 'E', E: 'S', S: 'W', W: 'N'} 			
-	       @@cw={N: 'W', E: 'N', S: 'E', W: 'S'} 			
-         @@pat=/[NEWS]/
+	       @@acw = {N: 'E', E: 'S', S: 'W', W: 'N'} 			
+	       @@cw =  {N: 'W', E: 'N', S: 'E', W: 'S'} 			
+         @@pat = /[NEWS]/
 
 	def initialize(string)
-		@x,@y,@p=string.split( ).map{|v| (v=~@@pat)?v:v.to_i}        
+		@x,@y,@p = string.split( ).map{|v| (v=~@@pat)?v:v.to_i}        
     raise ArgumentError, "BAD ARGUMENT! Position can only be N/E/W/S" if @p.eql?0  
-    initError("X coordinate can't be an alphabet(You typed '#{string.split[0]}'). FAIL!") if (string.split[0]!=@x.to_s)||x=~@@pat
-    initError("Y coordinate can't be an alphabet(You typed '#{string.split[1]}'). FAIL!") if (string.split[1]!=@y.to_s)||y=~@@pat
+    initError("X coordinate can't be an alphabet(You typed '#{string.split[0]}'). FAIL!") if (string.split[0]!=@x.to_s)||x =~ @@pat
+    initError("Y coordinate can't be an alphabet(You typed '#{string.split[1]}'). FAIL!") if (string.split[1]!=@y.to_s)||y =~ @@pat
 	end
 
 	def rotate(current_pos, dir)
