@@ -1,5 +1,6 @@
 require 'lib/code'
 require 'test/unit'
+
 class TestMars < MiniTest::Unit::TestCase
   def test_assertions
     ['N','E','W','S'].each do |position|  #Asserted all geographical position.
