@@ -8,7 +8,7 @@ describe Bot, 'must' do
   end
 
   it "have numerical coordinates" do
-   (1..10).each{|xc| (1..10).each{|yc| Bot.new("#{xc} #{yc} N").to_s.should eql("#{xc} #{yc} N")}}
+    (1..10).each{|xc| (1..10).each{|yc| Bot.new("#{xc} #{yc} N").to_s.should eql("#{xc} #{yc} N")}}
   end
 
   it "throw argument error for geographical HEAD" do
