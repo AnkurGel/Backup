@@ -150,9 +150,9 @@ endif
 " Text, tab, indent (can depend on type of file)
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""  
 "2 spaces intead of tabs
-set tabstop=3
+set tabstop=4
 set expandtab
-set shiftwidth=3
+set shiftwidth=4
 set smarttab
 ":set softtabstop=4 shiftwidth=4 expandtab - for python code for example
 
@@ -454,6 +454,9 @@ let g:EasyGrepFileAssociationsInExplorer=0
 let g:EasyGrepOptionPrefix='<leader>vy'
 let g:EasyGrepReplaceAllPerFile=0
 set t_Co=256
-colorscheme elflord
+"colorscheme elflord
+"colorscheme desert
+colorscheme blue
 au VimEnter * :hi Normal ctermbg=None
 " Also make sure to remove Command-T plugin
+"au FileType cpp let b:delimitMate_autoclose = 0
